@@ -4,6 +4,7 @@ export const ListItem = styled.li`
   display: flex;
   gap: 15px;
   position: relative;
+  list-style-type: none;
   &::before {
     content: '';
     position: absolute;

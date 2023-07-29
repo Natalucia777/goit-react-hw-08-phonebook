@@ -9,13 +9,7 @@ import { fetchCurrentUser } from 'redux/authorization/auth-operations';
 import AppLayout from 'components/AppLayout/AppLayout';
 import Loader from 'components/Loader/Loader';
 import NotFound from 'views/NotFound';
-import { TitleContacts } from './App.styled';
-// import { fetchContacts } from 'redux/operations';
-// import { selectError, selectIsLoading } from 'redux/contactsSlice';
-// import ContactForm from './ContactForm/ContactForm';
-// import ContactList from './ContactList/ContactList';
-// import Filter from './Filter/Filter';
-
+// import { TitleContacts } from './App.styled';
 const HomeView = lazy(() => import('../views/HomeView/HomeView'));
 const ContactsView = lazy(() => import('../views/ContactsView/ContactsView'));
 const LoginView = lazy(() => import('../views/LoginView/LoginView'));
@@ -25,8 +19,6 @@ const RegisterView = lazy(() => import('../views/RegisterView/RegisterView'));
 function App() {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectIsRefreshing);
-  // const error = useSelector(selectError);
-  // const isLoading = useSelector(selectIsLoading);
   useEffect(() => {
     dispatch(fetchCurrentUser())
   }, [dispatch]);
