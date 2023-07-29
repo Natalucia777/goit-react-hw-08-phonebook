@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/goit-react-hw-08-phonebook/static/css/main.fe973ac0.css",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.646ef8c9.js",
+    "static/js/477.98d73edc.chunk.js": "/goit-react-hw-08-phonebook/static/js/477.98d73edc.chunk.js",
+    "static/js/447.9ac24331.chunk.js": "/goit-react-hw-08-phonebook/static/js/447.9ac24331.chunk.js",
+    "static/js/978.5c6dbe3f.chunk.js": "/goit-react-hw-08-phonebook/static/js/978.5c6dbe3f.chunk.js",
+    "static/js/257.fd3a00de.chunk.js": "/goit-react-hw-08-phonebook/static/js/257.fd3a00de.chunk.js",
+    "static/css/584.e43ce9c0.chunk.css": "/goit-react-hw-08-phonebook/static/css/584.e43ce9c0.chunk.css",
+    "static/js/584.95b045be.chunk.js": "/goit-react-hw-08-phonebook/static/js/584.95b045be.chunk.js",
+    "static/js/322.4f273963.chunk.js": "/goit-react-hw-08-phonebook/static/js/322.4f273963.chunk.js",
+    "static/media/img-user.jpg": "/goit-react-hw-08-phonebook/static/media/img-user.eed7c7aa3a0c517f041d.jpg",
+    "index.html": "/goit-react-hw-08-phonebook/index.html",
+    "main.fe973ac0.css.map": "/goit-react-hw-08-phonebook/static/css/main.fe973ac0.css.map",
+    "main.646ef8c9.js.map": "/goit-react-hw-08-phonebook/static/js/main.646ef8c9.js.map",
+    "477.98d73edc.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/477.98d73edc.chunk.js.map",
+    "447.9ac24331.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/447.9ac24331.chunk.js.map",
+    "978.5c6dbe3f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/978.5c6dbe3f.chunk.js.map",
+    "257.fd3a00de.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/257.fd3a00de.chunk.js.map",
+    "584.e43ce9c0.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/584.e43ce9c0.chunk.css.map",
+    "584.95b045be.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/584.95b045be.chunk.js.map",
+    "322.4f273963.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/322.4f273963.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fe973ac0.css",
+    "static/js/main.646ef8c9.js"
+  ]
+}
