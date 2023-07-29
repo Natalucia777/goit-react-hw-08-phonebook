@@ -6,7 +6,8 @@ import { selectError } from '../redux/contacts/contactsSlice';
 import ContactForm from 'components/ContactForm/ContactForm';
 import ContactList from 'components/ContactList/ContactList';
 import Filter from 'components/Filter/Filter';
-import  Loader  from 'components/Loader/Loader';
+import Loader from 'components/Loader/Loader';
+import { ContactsTitle } from 'views/ContactsView/ContactsView.styled';
 
 function ContactsView() {
   const dispatch = useDispatch();
@@ -17,12 +18,12 @@ function ContactsView() {
   }, [dispatch]);
   return (
     <div>
-      {isLoading && !error && <h3>Request in progress</h3>}
-      <h2>Add new contact</h2>
+      {isLoading && !error && <ContactsTitle>Request in progress</ContactsTitle>}
+      <ContactsTitle>Add new contact</ContactsTitle>
       <ContactForm />
       {isLoading && <Loader />}
       <ContactList />
-      <h3>Find the contact</h3>
+      <ContactsTitle>Find the contact</ContactsTitle>
       <Filter />
     </div>
   );
