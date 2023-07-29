@@ -4,7 +4,7 @@ import { Form, Field } from 'formik';
 export const FormLogin = styled(Form)`
   border: 2px solid grey;
   border-radius: 40px;
-  background: #c7c7c1;
+  background: rgb(2, 48, 85);
   width: 400px;
   height: 300px;
   display: flex;
@@ -23,7 +23,7 @@ export const LabelLogin = styled.label`
   font-size: 20px;
   font-weight: 600;
   font-family: sans-serif;
-  color: rgb(60, 216, 240);
+  color: #fff;
 `;
 export const InputLogin = styled(Field)`
   width: 250px;

@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
+import { Form, Field } from 'formik';
 
-export const StForm = styled.form`
-background-color: rgb(2, 48, 85);
+export const FormWrap = styled(Form)`
+  background-color: rgb(2, 48, 85);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -19,14 +20,31 @@ export const StLabel = styled.label`
   }
 `;
 
-export const FieldName = styled.input`
+export const Input = styled(Field)`
   margin-left: 28px;
-`;
+  width: 250px;
+  border: 1px solid rgb(207, 207, 207);
+  padding: 5px;
+  font-size: 15px;
+  outline: transparent;
 
-export const FieldNumber = styled.input`
-  margin-left: 10px;
+  &:focus {
+    border: 1px solid rgb(235, 129, 129);
 `;
 
 export const FormButton = styled.button`
-  width: 300px;
+  width: 100px;
+  height: 35px;
+  padding: 5px;
+  background-color: white;
+  border: 2px solid grey;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgb(54, 184, 207);
+  }
 `;

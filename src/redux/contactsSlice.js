@@ -1,18 +1,19 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { logOut } from 'redux/authorization/auth-operations';
 import { fetchContacts, addContact, deleteContact } from './operations';
 
-export const handlePanding = state => {
+const handlePanding = state => {
   state.isLoading = true;
 };
 
-export const handleRejected = (state, action) => {
+const handleRejected = (state, action) => {
   state.isLoading = false;
   state.error = action.payload;
 };
 // export const contactSlice = createSlice({
 //   name: 'contacts',
 //   initialState: [],
-export const contactSlice = createSlice({
+const contactSlice = createSlice({
   name: 'contacts',
   initialState: {
     items: [],
@@ -42,6 +43,11 @@ export const contactSlice = createSlice({
       state.items = state.items.filter(contact => contact.id !== id);
     },
     [deleteContact.rejected]: handleRejected,
+    [logOut.fulfilled](state) {
+          state.items = [];
+          state.error = null;
+          state.isLoading = false;
+        },
   },
 });
 
