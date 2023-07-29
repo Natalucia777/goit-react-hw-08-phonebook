@@ -6,12 +6,8 @@ import ContactItem from 'components/ContactItem/ContactItem';
 import { AddList } from './ContactList.styled';
 
 const ContactList = () => {
-  // const contacts = useSelector(getContacts);
   const contacts = useSelector(selectContactsItems);
   const filter = useSelector(getFilterValue);
-  // if (!flContacts || flContacts.length === 0) {
-  //   return <div>No such contact!</div>;
-  // }
   const getFlContacts = (contacts, filter) => {
     if (filter) {
       return contacts.filter(contact =>
@@ -25,7 +21,7 @@ const ContactList = () => {
   if (!flContacts || flContacts.length === 0) {
     return <div>No contacts found</div>;
   }
-  return (
+    return (
     <AddList>
       {flContacts.map(contact => (
         <ContactItem key={contact.id} contact={contact} />
