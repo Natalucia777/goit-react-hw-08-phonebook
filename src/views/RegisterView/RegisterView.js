@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/auth-operations';
+import { register } from '../../redux/authorization/auth-operations';
 import {  Formik } from 'formik';
 import * as Yup from 'yup';
 import { toast } from 'react-toastify';

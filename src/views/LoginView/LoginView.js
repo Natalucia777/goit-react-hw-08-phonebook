@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
-import { logIn } from 'redux/auth/auth-operations';
+import { logIn } from 'redux/authorization/auth-operations';
 import {  Formik } from 'formik';
 import * as Yup from 'yup';
-import FormError from 'components/FormError/FormError';
+import FormError from 'components/ErrorMessage/ErrorMessage';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

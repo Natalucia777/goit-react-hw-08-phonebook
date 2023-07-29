@@ -34,7 +34,7 @@ export const Input = styled(Field)`
 
 export const FormButton = styled.button`
   width: 100px;
-  height: 35px;
+  height: 50px;
   padding: 5px;
   background-color: white;
   border: 2px solid grey;
