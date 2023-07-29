@@ -5,6 +5,10 @@ import { selectError, selectIsLoading } from 'redux/contactsSlice';
 import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
+
+import NotFound from 'views/NotFound';
+
+
 import { TitleContacts } from './App.styled';
 
 function App() {
@@ -24,7 +28,7 @@ function App() {
         Contacts
       </TitleContacts>
       <Filter />
-         {isLoading && !error && <p>Please wait!</p>}
+        {isLoading && !error && <p>Please wait!</p>}
       <ContactList />
     </div>
   );
