@@ -52,7 +52,6 @@ const ContactForm = () => {
     const isDuplicateName = contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase()
     );
-
     if (isDuplicateName) {
       toast.info(`${name} is already in contacts`);
       return;
@@ -74,24 +73,27 @@ const ContactForm = () => {
           <Input
             type="text"
             name="name"
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-            required
-            value={name}
-            onChange={handleChange}
+            // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            // title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            // required
+            // value={name}
+            // onChange={handleChange}
           />
+          <FormError name="name" />
         </StLabel>
+
         <StLabel htmlFor="user_tel">
           Number
           <Input
             type="tel"
             name="number"
-            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-            required
-            value={number}
-            onChange={handleChange}
+            // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+            // title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            // required
+            // value={number}
+            // onChange={handleChange}
           />
+          <FormError name="number" />
         </StLabel>
 
         <FormButton type="submit">
